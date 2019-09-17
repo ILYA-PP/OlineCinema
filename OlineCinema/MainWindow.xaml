@@ -1,0 +1,39 @@
+﻿<Window x:Class="OlineCinema.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OlineCinema"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="420" Width="700" MinWidth="700" MinHeight="420" MaxWidth="700" MaxHeight="420" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="pack://application:,,,/Resources/ФонАвтРег.png"/>
+    </Window.Background>
+    <Grid Height="420" MinWidth="700" MinHeight="420" MaxWidth="720" MaxHeight="420" Margin="0,0,30,0" Width="700">
+        <Button Content="Войти" HorizontalAlignment="Left" Margin="257,225,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" FontSize="14" FontWeight="Bold" Foreground="White" Background="#FF28333F">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <TextBox x:Name="LoginTB" Margin="0,170,257,227" TextWrapping="Wrap" Background="#FF28333F" Text="Логин" Foreground="White" FontWeight="Bold" FontSize="14" HorizontalAlignment="Right" Width="186" GotFocus="LoginTB_GotFocus" LostFocus="LoginTB_LostFocus"/>
+        <PasswordBox x:Name="PasswordTB" HorizontalAlignment="Right" Margin="0,0,257,200" Width="186" Background="#FF28333F" Password="Пароль" Foreground="White" FontWeight="Bold" FontSize="14" Height="22" VerticalAlignment="Bottom" GotFocus="PasswordTB_GotFocus" LostFocus="PasswordTB_LostFocus"/>
+        <Button x:Name="DontKnowPassB" Content="Забыл пароль" HorizontalAlignment="Left" Margin="337,225,0,0" VerticalAlignment="Top" Width="106" Foreground="White" FontSize="14" FontWeight="Bold" Click="DontKnowPassB_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FF28333F"/>
+                    <GradientStop Color="#FF28333F" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="SignInB" Content="Регистрация" HorizontalAlignment="Left" Margin="257,255,0,0" VerticalAlignment="Top" Width="186" Foreground="White" FontSize="14" FontWeight="Bold" Click="SignInB_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FF28333F"/>
+                    <GradientStop Color="#FF28333F" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <MediaElement HorizontalAlignment="Left" Height="114" Margin="229,51,0,0" VerticalAlignment="Top" Width="246" Source="https://www.youtube.com/watch?v=6l8JT9S-REY" ScrubbingEnabled="True"/>
+
+    </Grid>
+</Window>

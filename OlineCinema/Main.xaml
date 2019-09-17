@@ -1,0 +1,33 @@
+﻿<Window x:Class="OlineCinema.Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OlineCinema"
+        mc:Ignorable="d"
+        Title="Main" Height="450" Width="800" AllowsTransparency="True" WindowStyle="None" WindowState="Maximized">
+    <Window.Background>
+        <ImageBrush ImageSource="pack://application:,,,/Resources/ФонГ.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <DockPanel LastChildFill="False" Margin="19,17,19,97">
+            <Border BorderBrush="Black" BorderThickness="1" Width="190" Height="250" VerticalAlignment="Top">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="49*"/>
+                        <RowDefinition Height="8*"/>
+                    </Grid.RowDefinitions>
+                    <Border BorderBrush="Black" BorderThickness="1" Margin="5,5,5,5">
+                        <Image Source="Resources/ФонАвтРег.png"/>
+                    </Border>
+                    <Border BorderBrush="Black" BorderThickness="1" Margin="5,3,5,3" Grid.Row="1">
+                        <Label Content="Название фильма" FontSize="11" Padding="0" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="1,0"/>
+                    </Border>
+                </Grid>
+            </Border>
+        </DockPanel>
+    </Grid>
+</Window>
