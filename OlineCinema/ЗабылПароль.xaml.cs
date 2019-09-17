@@ -30,5 +30,10 @@ namespace OlineCinema
             logIn.Show();
             Close();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            //отправка на почту
+        }
     }
 }
