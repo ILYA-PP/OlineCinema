@@ -28,7 +28,7 @@ namespace OlineCinema
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string pass;
+            /*string pass;
             if (LoginTB.Text != "" || PasswordTB.Password != "")
             {
                 using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\OlineCinema\OlineCinema\CinemaDB.mdf;Integrated Security=True"))
@@ -56,14 +56,14 @@ namespace OlineCinema
                     if (pass != PasswordTB.Password)
                         MessageBox.Show("Неверный пароль!");
                     else
-                    {
+                    {*/
                         Main main = new Main();
                         main.Show();
                         Close();
-                    } 
+                    /*} 
                 }
             }
-            else MessageBox.Show("Есть незаполненные поля!");
+            else MessageBox.Show("Есть незаполненные поля!");*/
         }
 
         private void SignInB_Click(object sender, RoutedEventArgs e)

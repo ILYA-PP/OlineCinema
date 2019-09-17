@@ -33,7 +33,6 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <MediaElement HorizontalAlignment="Left" Height="114" Margin="229,51,0,0" VerticalAlignment="Top" Width="246" Source="https://www.youtube.com/watch?v=6l8JT9S-REY" ScrubbingEnabled="True"/>
 
     </Grid>
 </Window>

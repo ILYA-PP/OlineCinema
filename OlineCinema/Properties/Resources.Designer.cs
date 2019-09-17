@@ -61,6 +61,26 @@ namespace OlineCinema.Properties {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Wildlife {
+            get {
+                object obj = ResourceManager.GetObject("Wildlife", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] y2mate_com____6l8JT9S_REY_144p {
+            get {
+                object obj = ResourceManager.GetObject("y2mate_com____6l8JT9S_REY_144p", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap ФонАвтРег {

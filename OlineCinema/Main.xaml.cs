@@ -22,6 +22,7 @@ namespace OlineCinema
         public Main()
         {
             InitializeComponent();
+            mediaPlayer.Play();
         }
     }
 }

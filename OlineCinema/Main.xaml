@@ -28,6 +28,9 @@
                     </Border>
                 </Grid>
             </Border>
+            <Border BorderBrush="Black" BorderThickness="1" Height="164" VerticalAlignment="Top" Width="333">
+                <MediaElement x:Name="mediaPlayer" LoadedBehavior="Manual" Source="pack://siteoforigin:,,,/Resources/y2mate.com - _6l8JT9S-REY_144p.mp4" UnloadedBehavior="Manual"/>
+            </Border>
         </DockPanel>
     </Grid>
 </Window>
